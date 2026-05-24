@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Staff Information</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="grade.html">Grade Converter</a>
+            <a href="staff.html">Staff</a>
+            <a href="temperature.html">Temperature Converter</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <button onclick="sortNameAsc()">Sort Name A-Z</button>
+        <button onclick="sortNameDesc()">Sort Name Z-A</button>
+
+        <button onclick="sortSalaryAsc()">Sort Salary Low-High</button>
+        <button onclick="sortSalaryDesc()">Sort Salary High-Low</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>ID</th>
+                    <th>Start Date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+
+            <tbody id="staffTable"></tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Niloufar Karimi</p>
+    </footer>
+
+    <script src="staffData.js"></script>
+    <script src="staff.js"></script>
+
+</body>
+</html>

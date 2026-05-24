@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Temperature Converter</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="grade.html">Grade Converter</a>
+        <a href="staff.html">Staff</a>
+        <a href="temperature.html">Temperature Converter</a>
+    </nav>
+</header>
+
+<main>
+
+    <input type="number" id="tempInput"
+           placeholder="Enter Temperature">
+
+    <select id="tempType">
+        <option value="c">Celsius</option>
+        <option value="f">Fahrenheit</option>
+        <option value="k">Kelvin</option>
+    </select>
+
+    <button onclick="convertTemp()">
+        Convert
+    </button>
+
+    <h2 id="tempResult"></h2>
+
+</main>
+
+<footer>
+    <p>© 2026 Niloufar Karimi</p>
+</footer>
+
+<script src="temperature.js"></script>
+
+</body>
+</html>

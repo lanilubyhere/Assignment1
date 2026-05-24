@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Niloufar Karimi</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="grade.html">Grade Converter</a>
+        <a href="staff.html">Staff</a>
+        <a href="temperature.html">Temperature Converter</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a student interested in web programming and software development.
+        I enjoy constantly learning new things and improve my coding skills.
+    </p>
+
+    <p>
+        
+    In my free time, I enjoy photography and reading.
+    I like capturing creative pictures and exploring different kinds of books.
+
+    </p>
+
+    <img id="profileImage"
+         src="profileImage.jpg.jpeg"
+         width="300"
+         style="display:none;">
+
+</main>
+
+<footer>
+    <p>© 2026 Niloufar Karimi</p>
+    <p id="date"></p>
+</footer>
+
+<script>
+
+setTimeout(function() {
+    document.getElementById("profileImage").style.display = "block";
+}, 10000);
+
+document.getElementById("date").innerHTML =
+    new Date().toDateString();
+
+</script>
+
+</body>
+</html>
